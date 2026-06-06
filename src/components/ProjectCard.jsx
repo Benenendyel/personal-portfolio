@@ -1,4 +1,6 @@
 function ProjectCard({
+  navbarState,
+  setNavbarState,
   Icons,
   Projects,
   previewData,
@@ -17,6 +19,7 @@ function ProjectCard({
           onMouseEnter={() => setHover(index)}
           onMouseLeave={() => setHover(null)}
           onClick={() => {
+            setNavbarState(false);
             setPreviewData(project);
             setPreviewState(true);
           }}

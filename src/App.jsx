@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 // components
 import NavigationBar from "./components/NavigationBar";
 
@@ -12,9 +14,14 @@ import ConnectionsSection from "./sections/ConnectionsSection";
 import HeroBG from "./assets/images/heroBG.png";
 
 function App() {
+  const [navbarState, setNavbarState] = useState(true);
+
   return (
     <div className="relative min-h-screen scrollbar-thin bg-[#282828] px-10">
-      <NavigationBar />
+      <NavigationBar
+        navbarState={navbarState}
+        setNavbarState={setNavbarState}
+      />
       <main className="relative z-10">
         {/* THIS IS THE SKULL BG WHILE SCROLLING THROUGH THE CONTETNS */}
         <img
@@ -25,7 +32,10 @@ function App() {
         {/* THIS IS THE MAIN CONTENTS  */}
         <HeroSection />
         <AboutSection />
-        <ProjectsSection />
+        <ProjectsSection
+          navbarState={navbarState}
+          setNavbarState={setNavbarState}
+        />
         <SkillsSection />
         <ConnectionsSection />
       </main>

@@ -8,12 +8,14 @@ import logo from "../assets/images/portfolio-logo.png";
 import hamburgerIcon from "../assets/images/burgerIcon.png";
 import hamburgerIconOpened from "../assets/images/burgerIconOpened.png";
 
-function NavigationBar() {
+function NavigationBar({ navbarState, setNavbarState }) {
   const [isDropped, setDroppedStatus] = useState(false);
   const sections = ["About", "Projects", "Skills", "Connections"];
 
   return (
-    <nav className="fixed top-0 left-0 z-50 box-border flex w-full items-center justify-between gap-10 border-b-2 border-b-[#c5f022] bg-[#646464]/80 px-5 py-5 text-blue-100 backdrop-blur-md md:px-40 lg:px-80">
+    <nav
+      className={`${navbarState === true ? "flex" : "hidden"} fixed top-0 left-0 z-50 box-border w-full items-center justify-between gap-10 border-b-2 border-b-[#c5f022] bg-[#646464]/80 px-5 py-5 text-blue-100 backdrop-blur-md md:px-40 lg:px-80`}
+    >
       {/*  THIS IS THE LOGO SIDE */}
       <a
         className="shrink-0 cursor-pointer"

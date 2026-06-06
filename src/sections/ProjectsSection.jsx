@@ -8,7 +8,7 @@ import PreviewCard from "../components/PreviewCard";
 import Projects from "../data/projects";
 import Icons from "../data/icons";
 
-function ProjectsSection() {
+function ProjectsSection({ navbarState, setNavbarState }) {
   const [previewState, setPreviewState] = useState(false);
   const [previewData, setPreviewData] = useState(Object.values(Projects)[0]);
 
@@ -28,6 +28,8 @@ function ProjectsSection() {
 
         <div className="mt-5 overflow-x-auto">
           <ProjectCard
+            navbarState={navbarState}
+            setNavbarState={setNavbarState}
             Icons={Icons}
             Projects={Projects}
             previewData={previewData}
@@ -41,6 +43,8 @@ function ProjectsSection() {
       </div>
 
       <PreviewCard
+        navbarState={navbarState}
+        setNavbarState={setNavbarState}
         previewState={previewState}
         setPreviewState={setPreviewState}
         previewData={previewData}

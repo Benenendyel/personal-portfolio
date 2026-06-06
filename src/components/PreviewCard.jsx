@@ -1,6 +1,12 @@
 import { useState } from "react";
 
-function PreviewCard({ previewState, setPreviewState, previewData }) {
+function PreviewCard({
+  navbarState,
+  setNavbarState,
+  previewState,
+  setPreviewState,
+  previewData,
+}) {
   const [currentImage, setCurrentImage] = useState(0);
 
   const handleOverlaps = (newIndex) => {
@@ -23,6 +29,7 @@ function PreviewCard({ previewState, setPreviewState, previewData }) {
       onClick={() => {
         setPreviewState(false);
         setCurrentImage(0);
+        setNavbarState(true);
       }}
     >
       <div
