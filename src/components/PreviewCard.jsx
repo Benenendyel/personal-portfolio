@@ -41,7 +41,7 @@ function PreviewCard({
             onClick={() => {
               handleOverlaps(currentImage - 1);
             }}
-            className="absolute top-1/2 -left-5 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-[#282828]/60 px-5 py-3 font-semibold text-white transition hover:bg-[#282828]/80"
+            className="absolute top-1/2 -left-5 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-[#585858]/60 px-5 py-3 font-semibold text-[#c5f022] transition hover:bg-[#585858]/80"
           >
             {"<"}
           </button>
@@ -52,7 +52,7 @@ function PreviewCard({
             onClick={() => {
               handleOverlaps(currentImage + 1);
             }}
-            className="absolute top-1/2 -right-5 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-[#282828]/60 px-5 py-3 font-bold text-white transition hover:bg-[#282828]/80"
+            className="absolute top-1/2 -right-5 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-[#585858]/60 px-5 py-3 font-bold text-[#c5f022] transition hover:bg-[#585858]/80"
           >
             {">"}
           </button>
