@@ -10,7 +10,7 @@ import hamburgerIconOpened from "../assets/images/burgerIconOpened.png";
 
 function NavigationBar() {
   const [isDropped, setDroppedStatus] = useState(false);
-  const sections = ["About", "Experience", "Skills", "Connections"];
+  const sections = ["About", "Projects", "Skills", "Connections"];
 
   return (
     <nav className="fixed top-0 left-0 z-50 box-border flex w-full items-center justify-between gap-10 border-b-2 border-b-[#c5f022] bg-[#646464]/80 px-5 py-5 text-blue-100 backdrop-blur-md md:px-40 lg:px-80">
@@ -55,7 +55,7 @@ function NavigationBar() {
 
       {isDropped && (
         <ul
-          className={`absolute top-full left-0 z-50 w-full border-t-2 border-b-2 border-[#c5f022] bg-[#252728]/80 backdrop-blur-md`}
+          className={`absolute top-full left-0 z-50 w-full border-t-2 border-b-2 border-[#c5f022] bg-[#252728]/95 backdrop-blur-md`}
         >
           {sections.map((section) => (
             <li key={section}>
@@ -64,12 +64,9 @@ function NavigationBar() {
                 className="block cursor-pointer px-3 py-5 font-semibold hover:bg-[#646464] hover:text-[#c5f022]"
                 onClick={(e) => {
                   e.preventDefault();
-                  setDroppedStatus(false);
+                  setDroppedStatus(!isDropped);
                   scrollTo(section.toLowerCase());
                 }}
-                onBlur={() =>
-                  setTimeout(() => setDroppedStatus(!isDropped), 200)
-                }
               >
                 {section}
               </a>

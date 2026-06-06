@@ -11,7 +11,7 @@ function useTwoFrameMotion({
       setCurrentMotion((prev) =>
         prev === firstFrame ? secondFrame : firstFrame,
       );
-    }, 2000); // toggle every 400ms
+    }, 400);
 
     return () => clearInterval(interval);
   }, [firstFrame, secondFrame]);
