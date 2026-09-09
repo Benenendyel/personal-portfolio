@@ -15,6 +15,13 @@ import studentGrade2 from "../assets/images/studentGrade2.jpg";
 import studentGrade3 from "../assets/images/studentGrade3.jpg";
 import studentGrade4 from "../assets/images/studentGrade4.jpg";
 
+// mini hrms
+import authPage from "../assets/images/authPage.jpg";
+import dashboardPage from "../assets/images/dashboardPage.jpg";
+import attendancePage from "../assets/images/attendancePage.jpg";
+import salaryPage from "../assets/images/salaryPage.jpg";
+import employeePage from "../assets/images/employeePage.jpg";
+
 // default image for some projects that I did not take any screenshots
 import characterEmpty from "../assets/images/characterEmpty.png";
 
@@ -31,15 +38,7 @@ const projects = {
   second: {
     image: [kuvle1, kuvle2, kuvle3],
     name: "KUVLE",
-    stack: [
-      "HTML",
-      "Tailwind CSS",
-      "JavaScript",
-      "Express",
-      "Node.js",
-      "JWT",
-      "Bcrypt",
-    ],
+    stack: ["HTML", "Tailwind", "ExpressJS", "JWT", "Bcrypt"],
     description:
       "A Virtual Learning Environment (VLE) web application with a completed authentication system. Built using HTML, Tailwind CSS, Vanilla JavaScript, and Node.js with Express. Features secure user registration and login with bcrypt password hashing and JWT authentication",
     link: "https://github.com/Benenendyel/KUVLE",
@@ -57,11 +56,20 @@ const projects = {
   fourth: {
     image: [studentGrade1, studentGrade2, studentGrade3, studentGrade4],
     name: "Student Grade Viewer",
-    stack: ["React", "Tailwind", "Java", "Spring Boot", "REST API"],
+    stack: ["ReactJS", "TailwindCSS", "Java", "Spring Boot", "REST API"],
     description:
       "A simple full-stack practice project built to get better at React.js, Tailwind CSS, and REST APIs, while exploring Java Spring Boot for the first time. Not meant to be strict or production-ready, just a personal sandbox for learning.",
     link: "https://github.com/Benenendyel/student-grade-viewer",
   },
+
+  fifth: {
+    image: [authPage, dashboardPage, employeePage, attendancePage, salaryPage],
+    name: "Mini-HRMS",
+    stack: ["ReactJS", "TailwindCSS", "ExpressJS", "PostgreSQL"],
+    description:
+      "The Mini HRMS System is a full-stack application developed for the Cube Tech Innovations internship assessment. It provides administrators with a centralized platform to manage human resources efficiently.",
+  },
+  link: "https://github.com/Benenendyel/mini-hrms",
 };
 
 export default projects;

@@ -15,10 +15,10 @@ function AboutSection() {
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           <p className="text-muted-foreground leading- text-md line-clamp-2 flex items-center text-justify text-white md:text-lg">
-            2nd year Bachelor of Science in Information Technology student at
+            3rd year Bachelor of Science in Information Technology student at
             New Era University with a strong foundation in Java and
-            object-oriented programming. Has working knowledge of JavaScript and
-            has explored Spring Boot and REST API development through personal
+            object-oriented programming. Has knowledge of JavaScript and has
+            explored Spring Boot and REST API development through personal
             practice projects. Familiar with HTML, CSS, and ReactJS. A fast
             learner eager to contribute and grow in a real-world development
             environment.

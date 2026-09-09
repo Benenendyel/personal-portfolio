@@ -30,7 +30,8 @@ function HeroSection() {
           Ven Angel Tagaro
         </span>
         <p className="mx-auto mt-6 max-w-2xl font-mono text-lg text-wrap text-[#646464] md:text-2xl">
-          I code and love thinking about what happens beneath what is shown.
+          I do code and love thinking about what is happening beneath what is
+          shown.
         </p>
       </div>
 
