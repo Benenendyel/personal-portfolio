@@ -68,8 +68,8 @@ const projects = {
     stack: ["ReactJS", "TailwindCSS", "ExpressJS", "PostgreSQL"],
     description:
       "The Mini HRMS System is a full-stack application developed for the Cube Tech Innovations internship assessment. It provides administrators with a centralized platform to manage human resources efficiently.",
+    link: "https://github.com/Benenendyel/mini-hrms",
   },
-  link: "https://github.com/Benenendyel/mini-hrms",
 };
 
 export default projects;
